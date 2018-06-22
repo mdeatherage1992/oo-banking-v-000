@@ -18,9 +18,10 @@ end
 
 def valid?
 if @status == "open" && self.balance > 0
-"True"
+  "True"
 else
   "False"
+end
 end
 
   def broke?
