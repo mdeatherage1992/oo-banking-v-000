@@ -9,6 +9,7 @@ def initialize(name)
 end
 
 def deposit
+end
 
 
 end
