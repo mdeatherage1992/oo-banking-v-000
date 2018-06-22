@@ -1,7 +1,7 @@
 require "pry"
 class BankAccount
 attr_accessor :status,:balance
-attr_reader :name
+attr_reader :name,:sender,:receiver
 @@all = []
 def initialize(name)
   @name = name
