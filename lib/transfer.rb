@@ -14,11 +14,12 @@ sender.valid? && receiver.valid?
 end
 
 def execute_transaction
-  !self.status == "complete" && valid?
+  if !self.status == "complete" && valid?
   sender.withdraw(amount) && receiver.deposit(amount)
   self.status = "complete"
-end
+else
 "Transaction rejected. Please check your account balance."
+end
 end
 
 
