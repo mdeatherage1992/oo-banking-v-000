@@ -17,7 +17,7 @@ def display_balance
 end
 
 def valid?
-@status == "open" && self.balance > 0
+@status == "open" && self.balance >= 0
 end
 
   def broke?
