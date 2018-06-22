@@ -30,4 +30,6 @@ def status=(status)
   @status
 end
 
+def close_account
+  self.all.clear
 end
