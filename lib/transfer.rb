@@ -26,5 +26,6 @@ def reverse_transfer
   receiver.withdraw(amount) && sender.deposit(amount)
   self.status = complete
 end
+end
 
 end
