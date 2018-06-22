@@ -39,7 +39,6 @@ def self.all
   end
 
   def close_account
-    @@all.clear
     self.status = "closed"
   end
 
