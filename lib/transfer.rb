@@ -12,7 +12,6 @@ end
 def valid?
 sender.valid? && receiver.valid?
 end
-end
 
 def execute_transaction
   if !self.status == "complete" && valid?
