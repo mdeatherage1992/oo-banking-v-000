@@ -25,7 +25,9 @@ else
 end
 end
 
-
+def balance=(balance)
+  balance = @balance
+end
 
 def close_account
   self.status = "closed"
