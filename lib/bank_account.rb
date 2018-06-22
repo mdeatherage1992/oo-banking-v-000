@@ -38,7 +38,7 @@ def self.all
     @@all << self
   end
 
-  def self.reset_all
+  def close_account
     @@all.clear
   end
 
