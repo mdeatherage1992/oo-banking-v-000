@@ -16,6 +16,7 @@ end
 
 def execute_transaction
   sender.withdraw(amount) && receiver.deposit(amount)
+  self.status = "complete"
 end
 
 end
