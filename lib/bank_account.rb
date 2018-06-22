@@ -1,7 +1,7 @@
 require "pry"
 class BankAccount
 attr_accessor :status,:balance
-attr_reader :name,:sender,:receiver
+attr_reader :name
 @@all = []
 def initialize(name)
   @name = name
@@ -16,6 +16,7 @@ end
 def display_balance
   "Your balance is $#{@balance}."
 end
+
 
 def valid?
 if self.status == "open" && self.balance > 0
