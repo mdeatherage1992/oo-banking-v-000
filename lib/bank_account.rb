@@ -25,9 +25,5 @@ else
 end
 end
 
-  def broke?
-    if @balance < 0
-    end
-  end
 
 end
