@@ -18,7 +18,6 @@ end
 
 def valid?
   if @status == "open" && self.balance > 0
-    "valid"
   end
 end
 
