@@ -31,7 +31,7 @@ def status=(status)
 end
 
 def close_account
-  self.all.clear
+  self.clear
 end
 
 end
