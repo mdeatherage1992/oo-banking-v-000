@@ -25,4 +25,8 @@ def balance=(balance)
   @balance
 end
 
+def status=(status)
+  @status
+end
+
 end
