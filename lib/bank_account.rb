@@ -26,20 +26,8 @@ def balance=(balance)
   @balance
 end
 
-def status=(status)
-  @status
+def close_account
+  self.status = "closed"
 end
-
-def self.all
-    @@all
-  end
-
-  def save
-    @@all << self
-  end
-
-  def close_account
-    self.status = "closed"
-  end
 
 end
