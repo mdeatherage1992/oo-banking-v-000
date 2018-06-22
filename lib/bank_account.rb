@@ -19,9 +19,7 @@ end
 
 def valid?
 if self.status != "open" && self.balance < 0
-  false
 end
-true
 end
 
 def balance=(balance)
