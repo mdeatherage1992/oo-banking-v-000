@@ -19,9 +19,6 @@ end
 
 def valid?
 if @status == "open" && @balance > 0
-  "True"
-else
-  "False"
 end
 end
 
