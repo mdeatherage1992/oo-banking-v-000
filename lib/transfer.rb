@@ -15,13 +15,10 @@ end
 end
 
 def execute_transaction
-  #if valid?
   sender.withdraw(amount) && receiver.deposit(amount)
   self.status = "complete"
-else
-  self.status = "rejected"
 end
-end
+
 
 def reverse_transfer
   receiver.withdraw(amount) && sender.deposit(amount)
