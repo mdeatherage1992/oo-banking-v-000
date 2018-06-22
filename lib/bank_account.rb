@@ -1,7 +1,7 @@
 require "pry"
 class BankAccount
-attr_accessor :status
-attr_reader :name,:balance
+attr_accessor :status,:balance
+attr_reader :name
 @@all = []
 def initialize(name)
   @name = name
@@ -25,9 +25,9 @@ else
 end
 end
 
-def balance=(balance)
-   @balance
-end
+# def balance=(balance)
+#    @balance
+# end
 
 def close_account
   self.status = "closed"
