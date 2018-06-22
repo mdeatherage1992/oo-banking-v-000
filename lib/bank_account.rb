@@ -21,5 +21,9 @@ def valid?
 !!(@status == "open" && @balance > 0)
 end
 
+def close_account
+  self.delete
+end
+
 
 end
