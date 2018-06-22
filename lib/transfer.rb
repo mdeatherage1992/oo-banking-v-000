@@ -15,7 +15,7 @@ end
 end
 
 def execute_transaction
-  if valid?
+  #if valid?
   sender.withdraw(amount) && receiver.deposit(amount)
   self.status = "complete"
 else
