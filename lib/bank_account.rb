@@ -26,7 +26,7 @@ end
 end
 
 def balance=(balance)
-  @balance
+  @balance.dup.freeze
 end
 
 def close_account
