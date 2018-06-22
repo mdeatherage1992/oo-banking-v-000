@@ -19,7 +19,6 @@ end
 
 def valid?
 if @status == "open" && @balance > 0
-  binding.pry
   true
 else
   false
