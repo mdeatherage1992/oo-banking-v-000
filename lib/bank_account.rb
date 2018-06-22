@@ -19,6 +19,7 @@ end
 
 def valid?
 if self.status == "open" && self.balance > 0
+  binding.pry
   "True"
 else
   "False"
