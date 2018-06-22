@@ -22,7 +22,7 @@ def valid?
 end
 
 def balance
-  @balance
+  @balance.dup.freeze
 end
 
 end
