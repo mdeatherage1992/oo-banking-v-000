@@ -1,6 +1,6 @@
 require "pry"
 class Transfer
-  attr_accessor :sender,:receiver, :amount,:status
+  attr_accessor :sender,:receiver, :amount,:status, :valid?
   attr_reader
   def initialize(sender,receiver,amount)
     @sender = sender
