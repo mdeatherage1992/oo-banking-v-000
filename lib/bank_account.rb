@@ -19,6 +19,7 @@ end
 
 def valid?
 @status == "open" && @balance > 0
+binding.pry
 end
 
 def balance=(balance)
