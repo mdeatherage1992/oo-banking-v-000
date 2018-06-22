@@ -13,6 +13,10 @@ def deposit(deposit)
   @balance += deposit
 end
 
+def withdraw(withdrawl)
+  @balance -= withdrawl
+end
+
 def display_balance
   "Your balance is $#{@balance}."
 end
