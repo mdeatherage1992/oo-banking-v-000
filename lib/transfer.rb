@@ -10,6 +10,7 @@ end
 
 def valid?
   if @sender.valid? && @receiver.valid?
+    binding.pry
 end
 end
 
