@@ -18,6 +18,8 @@ def execute_transaction
   if !self.status == "complete" && valid?
   sender.withdraw(amount) && receiver.deposit(amount)
   self.status = "complete"
+else
+  "Transaction rejected. Please check your account balance."
 end
 end
 
