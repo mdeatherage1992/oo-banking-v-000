@@ -18,7 +18,9 @@ end
 
 def valid?
   if @status == "open" && self.balance > 0
+    true
   end
+  false
 end
 
   def broke?
