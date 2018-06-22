@@ -21,8 +21,5 @@ def valid?
 !!(@status == "open" && @balance > 0)
 end
 
-def balance
-  @balance.dup.freeze
-end
 
 end
