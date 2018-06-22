@@ -14,7 +14,7 @@ sender.valid? && receiver.valid?
 end
 
 def execute_transaction
-  if !self.status == "complete" && valid?
+  if self.status != "complete" && valid?
     binding.pry
   sender.withdraw(amount) && receiver.deposit(amount)
   self.status = "complete"
