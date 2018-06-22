@@ -18,11 +18,10 @@ def display_balance
 end
 
 def valid?
-if @status == "open" && @balance > 0
-  true
-else
+if @status != "open" && @balance < 0
   false
 end
+true
 end
 
 def balance=(balance)
